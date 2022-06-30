@@ -1,0 +1,12 @@
+<table *ngIf="iRowList && iRowList.length > 0" class="table">
+    <thead>
+    <tr>
+        <th *ngFor="let column of iColumnList">{{column}}</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let row of iRowList">
+        <td *ngFor="let data of row; index as i">{{data}}</td>
+    </tr>
+    </tbody>
+</table>

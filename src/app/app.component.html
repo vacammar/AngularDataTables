@@ -1,0 +1,25 @@
+<h2>Angular + jQuery + Datatable.net</h2>
+
+<hr>
+
+<div class="col-12">
+
+    <h3>Datatable data from REST API</h3>
+
+    <div class="row">
+        <table class="table" id="my-table"></table>
+    </div>
+</div>
+
+<hr>
+
+<div class="col-12">
+
+    <h3>Datatable custom component</h3>
+
+    <div class="row">
+        <app-data-table [iColumnList]="columnList" [iRowList]="rowList"></app-data-table>
+    </div>
+</div>
+
+<router-outlet></router-outlet>
